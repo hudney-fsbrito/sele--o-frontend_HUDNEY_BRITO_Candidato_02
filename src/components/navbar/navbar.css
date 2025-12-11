@@ -1,0 +1,82 @@
+/* MOBILE FIRST */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+
+  border: solid 1px red;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+/* Botão do menu (hamburguer) */
+.navbar-toggle {
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+/* Menu escondido no mobile */
+.navbar-menu {
+  width: 100%;
+  list-style: none;
+  padding: 25px 0;
+  background: #1e90ff;
+
+  display: none; /* escondido */
+  flex-direction: column;
+  align-items: center; 
+  gap: 25px;
+  
+  margin-top: 0;
+
+  transition: all 1.9s ease;
+}
+
+.navbar-menu li {
+  padding: 10px 16px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Mostrar menu quando ativo */
+.navbar-menu.active {
+  display: flex;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none; /* esconde botão */
+  }
+
+  .navbar-menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    border: none;
+    box-shadow: none;
+    width: auto;
+  }
+
+  .navbar-menu li {
+    margin-left: 24px;
+    padding: 0;
+  }
+
+  .navbar-menu li a {
+    font-size: 17px;
+  }
+}
