@@ -1,82 +1,113 @@
 /* MOBILE FIRST */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px;
+  width: 100%;
   background: #fff;
   border-bottom: 1px solid #eee;
-
-  border: solid 1px red;
+  padding: 0;               /* retirar padding para que menu encoste no topo */
 }
 
+/* Topo com logo + hamburger inline */
+.navbar-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;            /* apenas topo com espaçamento */
+}
+
+/* Logo */
 .navbar-logo img {
   height: 40px;
 }
 
-/* Botão do menu (hamburguer) */
+/* Botão hamburguer */
 .navbar-toggle {
-  font-size: 32px;
   background: none;
   border: none;
   cursor: pointer;
-  display: block;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Menu escondido no mobile */
+/* MENU — mantenha no fluxo para empurrar o hero */
 .navbar-menu {
   width: 100%;
   list-style: none;
-  padding: 25px 0;
+  margin: 0;                /* sem gap entre navbar e menu */
+  padding: 0;               /* reset padding, vamos aplicar no links */
   background: #1e90ff;
+  overflow: hidden;
 
-  display: none; /* escondido */
-  flex-direction: column;
-  align-items: center; 
-  gap: 25px;
-  
-  margin-top: 0;
-
-  transition: all 1.9s ease;
+  /* animação via max-height */
+  max-height: 0;            /* fechado */
+  transition: max-height 0.35s ease;
 }
 
+/* aberto: altura suficiente para acomodar os itens */
+.navbar-menu.active {
+  max-height: 400px; /* ajuste conforme número de itens; pode usar 1000px se preferir */
+}
+
+/* cada item ocupa toda a largura e tem espaçamento */
 .navbar-menu li {
-  padding: 10px 16px;
+  width: 100%;
 }
 
 .navbar-menu li a {
-  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 18px 20px;
+  color: #ddd;
   text-decoration: none;
   font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-/* Mostrar menu quando ativo */
-.navbar-menu.active {
-  display: flex;
+.navbar-menu li a:hover {
+  font-weight: 600;
+  color: #fff;
+}
+
+/* efeito suave de aparecimento por item */
+.navbar-menu li {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 /* DESKTOP */
 @media (min-width: 768px) {
-  .navbar-toggle {
-    display: none; /* esconde botão */
+  .navbar-top { padding: 16px 24px; }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 16px;
   }
 
+  .navbar-toggle { display: none; }
+
   .navbar-menu {
-    position: static;
-    display: flex;
+    display: flex !important;
+    max-height: none;       
     flex-direction: row;
     background: none;
-    border: none;
-    box-shadow: none;
     width: auto;
   }
 
   .navbar-menu li {
+    width: auto;
     margin-left: 24px;
-    padding: 0;
   }
 
   .navbar-menu li a {
+    padding: 0;
+    color: black;
     font-size: 17px;
   }
 }
