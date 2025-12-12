@@ -199,3 +199,32 @@ SECTION: About
     flex: 2;
   }
 }
+
+/* =============================
+   FOOTER
+============================= */
+
+#footer {
+  background-color: var(--color-blue2);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+#footer p {
+  color: var(--color-light);
+  margin: 0.5rem 0;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  padding: 0;
+  margin: 0;
+}
+
+#footer a {
+  color: var(--color-light);
+    }
