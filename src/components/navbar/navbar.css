@@ -3,7 +3,10 @@
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #eee;
-  padding: 0;               /* retirar padding para que menu encoste no topo */
+  padding: 0;         
+  margin: 0;
+  border: 0;
+
 }
 
 /* Topo com logo + hamburger inline */
@@ -12,7 +15,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;            /* apenas topo com espaçamento */
+  padding: 16px;            
 }
 
 /* Logo */
@@ -32,28 +35,29 @@
   justify-content: center;
 }
 
-/* MENU — mantenha no fluxo para empurrar o hero */
+
 .navbar-menu {
   width: 100%;
   list-style: none;
-  margin: 0;                /* sem gap entre navbar e menu */
-  padding: 0;               /* reset padding, vamos aplicar no links */
+  margin: 0;                
+  padding: 0;               
   background: #1e90ff;
   overflow: hidden;
 
-  /* animação via max-height */
-  max-height: 0;            /* fechado */
+  
+  max-height: 0;            
   transition: max-height 0.35s ease;
 }
 
-/* aberto: altura suficiente para acomodar os itens */
+
 .navbar-menu.active {
-  max-height: 400px; /* ajuste conforme número de itens; pode usar 1000px se preferir */
+  max-height: 400px; 
 }
 
-/* cada item ocupa toda a largura e tem espaçamento */
+
 .navbar-menu li {
   width: 100%;
+  margin: 0;
 }
 
 .navbar-menu li a {
