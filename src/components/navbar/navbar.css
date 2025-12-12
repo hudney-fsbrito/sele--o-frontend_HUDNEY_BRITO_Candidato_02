@@ -99,7 +99,7 @@
     background: none;
     width: auto;
   }
-
+  
   .navbar-menu li {
     width: auto;
     margin-left: 24px;
@@ -109,5 +109,10 @@
     padding: 0;
     color: black;
     font-size: 17px;
+  }
+
+  .navbar-menu li a:hover {
+    font-weight: 500;
+    color: #1e90ff;
   }
 }
