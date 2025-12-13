@@ -8,15 +8,26 @@ import { initScrollAnimation } from "../js/animations/scrollAnimations.js";
 
 // Renderiza Navbar
 console.log("MAIN.JS CARREGOU");
-document.querySelector("#navbar").innerHTML = Navbar();
-initNavbar();
+// Navbar
+const navbarEl = document.querySelector("#navbar");
+if (navbarEl) {
+  navbarEl.innerHTML = Navbar();
+  initNavbar();
+}
 
 //Renderiza Hero Section
-document.getElementById("hero").innerHTML = Hero();
+const heroEl = document.getElementById("hero");
+if (heroEl) {
+  heroEl.innerHTML = Hero();
+}
+
 
 // Renderiza Gallery dentro da MAIN
-document.querySelector(".intro").insertAdjacentHTML("afterend", Gallery());
-loadGalleryImages();
+const introEl = document.querySelector(".intro");
+if (introEl) {
+  introEl.insertAdjacentHTML("afterend", Gallery());
+  loadGalleryImages();
+}
 
 initScrollAnimation();
 

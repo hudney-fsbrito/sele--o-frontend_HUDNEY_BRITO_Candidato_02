@@ -32,7 +32,7 @@
     height: 260px;
   }
 
-  /* REGRAS DE GRID DINÂMICAS  */
+  /* GRID DINÂMICO  */
 
   /* Linha 1: img 1 = 1/3, img 2 = 2/3 */
   .gallery-grid img:nth-child(1) {

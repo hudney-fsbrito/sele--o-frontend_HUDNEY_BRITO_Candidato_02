@@ -8,8 +8,9 @@
   gap: 2rem;
 }
 
-.intro h2 {
+.intro h1 {
   font-size: 1.7rem;
+  color: var(--color-dark);
 }
 
 .intro::after {
