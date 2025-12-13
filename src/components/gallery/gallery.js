@@ -1,6 +1,6 @@
 export function Gallery() {
   return `
-    <section class="gallery" data-test="gallery">
+    <section class="gallery" data-test="gallery" aria-label="Galeria de fotos do Hotel Miragem">
         <div class="gallery-grid" id="gallery-grid"></div>
     </section>
   `;
@@ -11,18 +11,18 @@ export function loadGalleryImages() {
   if (!galleryContainer) return;
 
   const galleryImages = [
-    "itarace-hotel-01.jpg",
-    "itarace-hotel-02.jpg",
-    "itarace-hotel-03.jpg",
-    "itarace-hotel-04.jpg",
-    "itarace-hotel-05.jpg",
-    "itarace-hotel-06.jpg",
+    { src: "itarace-hotel-01.jpg", alt: "Piscina do Itarace Hotel" },
+    { src: "itarace-hotel-02.jpg", alt: "Quarto standard com varanda" },
+    { src: "itarace-hotel-03.jpg", alt: "Lobby do hotel" },
+    { src: "itarace-hotel-04.jpg", alt: "Restaurante do hotel" },
+    { src: "itarace-hotel-05.jpg", alt: "Academia do hotel" },
+    { src: "itarace-hotel-06.jpg", alt: "Vista aérea do hotel" },
   ];
 
   galleryImages.forEach((image, index) => {
     const img = document.createElement("img");
-    img.src = `/src/assets/img/${image}`;
-    img.alt = "Hotel Miragem - Galeria";
+    img.src = `/src/assets/img/${image.src}`;
+    img.alt = image.alt;
     img.loading = "lazy";
     img.decoding = "async";
 
