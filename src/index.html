@@ -69,10 +69,10 @@
   </head>
   
   <body>
-    <nav id="navbar"></nav>
-    <header id="hero"></header>
+    <nav id="navbar" role="navigation"></nav>
+    <header id="hero" role="banner"></header>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
       <section class="intro" data-test="intro">
         <h1>Conheça o Hotel Miragem!</h1>
         <p>
@@ -99,7 +99,7 @@
 
       <!-- Features -->
       <section class="features animate-on-scroll scale" data-test="features">
-        <div class="feature-item">
+        <article class="feature-item">
           <i class="fa-solid fa-location-arrow"></i>
           <h3>Localização</h3>
           <p>
@@ -107,9 +107,9 @@
             tem refrescantes cachoeiras e praias belíssimas, muitas delas tão
             pequenas que nem aparecem nos mapas.
           </p>
-        </div>
+        </article>
 
-        <div class="feature-item">
+        <article class="feature-item">
           <i class="fa-solid fa-gift feature"></i>
           <h3>Pacotes e Ofertas</h3>
           <p>
@@ -117,9 +117,9 @@
             relax? Nossa estrutura conta com uma diversidade de espaços que
             proporcionam momentos inesquecíveis.
           </p>
-        </div>
+        </article>
 
-        <div class="feature-item">
+        <article class="feature-item">
           <i class="fa-solid fa-house"></i>
           <h3>Acomodações</h3>
           <p>
@@ -127,7 +127,7 @@
             amplas súítes e 2 chalés famílias, todos com TV a cabo, internet,
             frigobar, além de varanda com rede.
           </p>
-        </div>
+        </article>
       </section>
 
       <!-- Newsletter -->
@@ -138,19 +138,19 @@
           eventos culturais
         </p>
 
-        <div class="newsletter-form">
+        <article class="newsletter-form">
           <input
             type="email"
             placeholder="Digite o seu email"
             data-test="newsletter-email"
           />
           <button data-test="newsletter-button">Cadastrar</button>
-        </div>
+        </article>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer id="footer" data-test="footer-test">
+    <footer id="footer" data-test="footer-test" role="contentinfo">
       <p>&copy; 2023 Hotel Miragem. Todos os direitos reservados.</p>
       <ul>
         <li><a href="https://facebook.com/hotelmiragem" target="_blank"

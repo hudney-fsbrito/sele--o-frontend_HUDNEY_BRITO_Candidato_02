@@ -1,6 +1,6 @@
 export function Navbar() {
   return `
-    <nav class="navbar" data-test="navbar-test">
+    <nav class="navbar" data-test="navbar-test" role="navigation">
        <div class="navbar-top">
         <div class="navbar-logo">
             <img src="/src/assets/img/hotel-logo.png" alt="Logo" />
