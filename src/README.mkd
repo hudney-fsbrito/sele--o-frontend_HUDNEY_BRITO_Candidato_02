@@ -1,0 +1,126 @@
+# 🏨 Hotel Miragem – Teste Técnico Frontend
+
+Este projeto foi desenvolvido como parte de um **teste técnico para vaga de Desenvolvedor Frontend**, com o objetivo de demonstrar habilidades em **HTML, CSS e JavaScript**, seguindo boas práticas de organização, acessibilidade, responsividade e compatibilidade entre navegadores.
+
+---
+
+## 📌 Visão Geral
+
+O site apresenta uma landing page institucional para o **Hotel Miragem**, destacando informações como localização, acomodações, pacotes e galeria de imagens, com foco em uma experiência visual agradável e acessível.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5** – Estrutura semântica e acessível  
+- **CSS3** – Estilização e layout responsivo  
+  - Flexbox  
+  - CSS Grid  
+  - Media Queries  
+- **JavaScript (Vanilla)** – Interatividade e manipulação do DOM  
+- **Font Awesome** – Ícones  
+- **Git & GitHub** – Versionamento do código  
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+src/
+ ├── assets/
+ │   └── img/
+ ├── components/
+ │   ├── navbar/
+ │   ├── hero/
+ │   ├── gallery/
+ │   └── footer/
+ ├── css/
+ │   └── style.css
+ ├── js/
+ │   ├── animations/
+ │   └── main.js
+ └── index.html
+```
+
+A estrutura foi organizada visando **separação de responsabilidades**, facilitando a manutenção e a escalabilidade do projeto.
+
+---
+
+## ♿ Acessibilidade
+
+O projeto segue boas práticas de acessibilidade, incluindo:
+
+- Uso de **HTML semântico** (`section`, `header`, `nav`, `main`, `footer`)
+- Hierarquia correta de títulos (`h1`, `h2`, `h3`)
+- Imagens com atributo `alt` descritivo
+- Ícones decorativos com `aria-hidden="true"`
+- Layout compreensível para leitores de tela
+- Conteúdo acessível mesmo com animações e efeitos visuais
+
+---
+
+## 📱 Responsividade
+
+O layout é totalmente responsivo, adaptando-se aos principais tamanhos de tela:
+
+- Desktop
+- Tablet
+- Smartphone
+
+Foram utilizadas **media queries**, **Flexbox** e **Grid** para garantir uma boa experiência em diferentes dispositivos.
+
+---
+
+## 🌐 Compatibilidade Cross-Browser
+
+O projeto foi testado e apresenta compatibilidade com os principais navegadores modernos:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Safari
+
+São utilizadas apenas APIs e propriedades CSS amplamente suportadas, garantindo consistência visual e funcional.
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/hudney-fsbrito/sele--o-frontend_HUDNEY_BRITO_Candidato_02
+   ```
+
+2. Acesse a pasta do projeto:
+   ```bash
+   cd sele--o-frontend_HUDNEY_BRITO_Candidato_02
+   ```
+
+3. Abra o arquivo `index.html` no navegador  
+   *(ou utilize uma extensão como Live Server para melhor experiência)*
+
+---
+
+## 🧪 Boas Práticas Aplicadas
+
+- Código limpo e organizado
+- Separação entre HTML, CSS e JavaScript
+- Nomenclatura clara e significativa
+- Evita dependência de bibliotecas desnecessárias
+- Foco em acessibilidade, responsividade e compatibilidade
+
+---
+
+## 👨‍💻 Autor
+
+**Hudney Fernandes dos Santos Brito**  
+Desenvolvedor Frontend  
+
+- 🔗 GitHub: https://github.com/hudney-fsbrito  
+- 🔗 LinkedIn: https://linkedin.com/in/hudneyfernandes-dev  
+
+---
+
+## 📄 Observação Final
+
+Este projeto foi desenvolvido exclusivamente para fins avaliativos em um processo seletivo, com o objetivo de demonstrar conhecimentos técnicos e boas práticas de desenvolvimento frontend.
