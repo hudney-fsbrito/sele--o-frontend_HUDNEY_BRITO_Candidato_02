@@ -1,0 +1,28 @@
+/* Estado inicial */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.fade {
+  transform: none;
+}
+
+.animate-on-scroll.left {
+  transform: translateX(-2rem);
+}
+
+.animate-on-scroll.right {
+  transform: translateX(2rem);
+}
+
+.animate-on-scroll.scale {
+  transform: scale(0.5);
+}
+
+/* Quando aparece */
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

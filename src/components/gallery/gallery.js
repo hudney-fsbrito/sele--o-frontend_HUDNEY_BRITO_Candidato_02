@@ -19,12 +19,16 @@ export function loadGalleryImages() {
     "itarace-hotel-06.jpg",
   ];
 
-  galleryImages.forEach((image) => {
+  galleryImages.forEach((image, index) => {
     const img = document.createElement("img");
     img.src = `/src/assets/img/${image}`;
     img.alt = "Hotel Miragem - Galeria";
     img.loading = "lazy";
     img.decoding = "async";
+
+    img.classList.add("animate-on-scroll");
+    img.style.transitionDelay = `${index * 0.1}s`;
+
     galleryContainer.appendChild(img);
   });
 }

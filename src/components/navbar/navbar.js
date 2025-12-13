@@ -11,10 +11,10 @@ export function Navbar() {
         </button>
       </div>
       <ul class="navbar-menu" id="navbar-menu">
-          <li><a href="/src/">Home</a></li>
-          <li><a href="pages/sobre/sobre.html">Sobre</a></li>
-          <li><a href="pages/depoimentos/depoimentos.html">Depoimentos</a></li>
-          <li><a href="pages/contato/contato.html">Contato</a></li>
+          <li><a href="/src/index.html">Home</a></li>
+          <li><a href="/src/pages/sobre/sobre.html">Sobre</a></li>
+          <li><a href="/src/pages/depoimentos/depoimentos.html">Depoimentos</a></li>
+          <li><a href="/src/pages/contato/contato.html">Contato</a></li>
       </ul>
     </nav>
   `;

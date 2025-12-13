@@ -65,7 +65,9 @@
     <link rel="stylesheet" href="components/navbar/navbar.css" />
     <link rel="stylesheet" href="components/herosection/hero.css" />
     <link rel="stylesheet" href="components/gallery/gallery.css" />
+    <link rel="stylesheet" href="css/animations.css" />
   </head>
+  
   <body>
     <nav id="navbar"></nav>
     <header id="hero"></header>
@@ -96,7 +98,7 @@
       </section>
 
       <!-- Localização - Ícones na mesma linha no desktop -->
-      <section class="features" data-test="features">
+      <section class="features animate-on-scroll scale" data-test="features">
         <div class="feature-item">
           <i class="fa-solid fa-location-arrow"></i>
           <h3>Localização</h3>
@@ -151,13 +153,16 @@
     <footer id="footer" data-test="footer-test">
       <p>&copy; 2023 Hotel Miragem. Todos os direitos reservados.</p>
       <ul>
-        <li><a href="https://facebook.com/hotelmiragem"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="https://instagram.com/hotelmiragem"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://twitter.com/hotelmiragem"><i class="fa-brands fa-twitter"></i></i></a></li>
+        <li><a href="https://facebook.com/hotelmiragem" target="_blank"
+   rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://instagram.com/hotelmiragem" target="_blank"
+   rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/hotelmiragem" target="_blank"
+   rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a></li>
       </ul>
     </footer>
 
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
     <!-- <script src="./js/main.js"></script> -->
   </body>
 </html>

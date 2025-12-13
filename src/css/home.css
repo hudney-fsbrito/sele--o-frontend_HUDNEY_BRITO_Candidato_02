@@ -160,6 +160,7 @@ SECTION: About
   gap: 1rem;
   max-width: 400px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .newsletter-form input {
